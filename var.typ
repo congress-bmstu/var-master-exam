@@ -6,7 +6,7 @@
   horizon + center,
   {
     set page(numbering: none)
-    align(right, text(size: 26pt)[Киреева Елена Александровна #emoji.man])
+    align(right, text(size: 26pt)[Киреева Елена Александровна #emoji.woman])
     v(5fr)
     text(size: 26pt, weight: "bold")[Экзамен]
     v(1fr)
