@@ -18,12 +18,23 @@
   },
 )
 #pagebreak()
-// #heading(numbering: none)[Распределение вопросов]
-// #figure(table(
-//   columns: 4,
-//   [Валера], [Таня], [Андрей], [Саша],
-//   [1.1, 1.3, 2.1, 2.7], [1.2, 2.2, 2.3, 2.4, 2.5], [2.6, 2.8, 2.11, 2.13], [1.4, 1.5, 2.9, 2.10, 2.12],
-// ))
+#heading(numbering: none, outlined: false)[Распределение вопросов]
+#figure(table(
+  columns: 5,
+  inset: 0.5em,
+  align: center + horizon,
+  table.header([*Раздел*], [*Валера*], [*Таня*], [*Андрей*], [*Саша*]),
+
+  [Модуль 1], table.cell(rowspan: 3, text(size: 38pt, baseline: -0.125em)[#emoji.crossmark]),
+  [], [1.3, 1.4],
+  [1.1, 1.2, 1.5, 1.6], [Модуль 2],
+  [2.1, 2.2, 2.3, 2.4, 2.5],
+  [2.7, 2.8, 2.9], [2.6],
+  [Практика], [3.3],
+  [3.2],
+  [3.1, 3.4],
+))
+#v(1cm)
 #outline()
 #pagebreak()
 
