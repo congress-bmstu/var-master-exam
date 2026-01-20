@@ -30,7 +30,7 @@
     + Если $cal(F) equiv.not 0$, то $(exists x eq.not 0, x in H) space cal(F) x eq.not 0$.
 
       Рассмотрим множество $L = { z in H | cal(F) z = 0 }$ -- ядро функционала $cal(F)$
-      (подпространство в $H$). Обозначим $K = L^perp = { z in H | (forall w in L) (z, w) = 0 } <= H$. Тогда $H = L plus.circle K$.
+      (подпространство в $H$). Обозначим $K = L^perp = { z in H | (forall w in L) (z, w) = 0 } <= H$. Тогда $H = L plus.o K$.
 
       Т.к. $cal(F) equiv.not 0$, то $L eq.not H$. Тогда $K eq.not {0}$ $=>$ $(exists x in K, x eq.not 0) space cal(F) x = alpha eq.not 0$.
 
@@ -65,7 +65,7 @@
     *Норма.* $abs(cal(F) u) = abs( (u, v) ) <= norm(u) dot norm(v)$.
     Тогда $norm(F) <= norm(v)$.
 
-    Докажем, что меньше быть не может: предположим, что может: $norm(cal(F)) < norm(v)$ (домножим на $norm(v)$: $norm(F) dot norm(v) < norm(v)^2$), 
+    Докажем, что меньше быть не может: предположим, что может: $norm(cal(F)) < norm(v)$ (домножим на $norm(v)$: $norm(F) dot norm(v) < norm(v)^2$),
     тогда $cal(F) v = (v, v) = norm(v)^2$. Тогда
     $ norm(v)^2= abs(cal(F) v) <= norm(cal(F)) dot norm(v) < norm(v)^2 $ -- противоречие.
 
