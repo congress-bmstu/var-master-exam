@@ -1,6 +1,6 @@
 #import "@preview/thmbox:0.1.1": *
-#import "@preview/codly:1.2.0": *
-#import "@preview/codly-languages:0.1.8": *
+#import "@preview/codly:1.3.0": *
+#import "@preview/codly-languages:0.1.10": *
 #let notes(
   title: "",
   author: "",
