@@ -216,6 +216,18 @@
   color: red,
   ..args,
 ) = thmbox(fill: fill, variant: variant, color: color, ..args)
+#let unwanted(..args) = thmbox(
+  bar-thickness: 8pt,
+  fill: tiling(size: (60pt, 60pt))[
+    #place(rect(fill: red.lighten(90%), width: 60pt, height: 60pt))
+    #place(line(stroke: black.lighten(70%)+1pt, start: (0%, 0%), end: (100%, 100%)))
+    #place(line(stroke: black.lighten(70%)+1pt, start: (0%, 100%), end: (100%, 0%)))
+  ],
+  variant: [#h(-2.5em) НЕОБЯЗАТЕЛЬНОЕ\ это не нужно в билете, но оставлено здесь для понимания #place(top+right, dx: -1em, block(fill: black.lighten(50%), outset: .25em, radius: 25%, text(baseline: -2pt)[#h(2pt)#emoji.skull #emoji.warning #emoji.fire]))],
+  numbering: none,
+  color: red,
+  ..args
+)
 
 #let dark-red = rgb("#C5283D")
 #let mint = rgb("3eb489")
