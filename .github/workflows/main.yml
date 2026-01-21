@@ -8,7 +8,7 @@ jobs:
   build:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      DOC_NAME: "heterogeneous"
+      DOC_NAME: "var"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
