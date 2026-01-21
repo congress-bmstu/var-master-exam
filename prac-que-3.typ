@@ -4,5 +4,5 @@
 
 
 Я не хочу это перепечатывать, потому что задачи такой не будет все равно.
-#image("images/1.png")
-#image("images/2.png")
+#image("images/1.png", width: 100%)
+#image("images/2.png", width: 100%)
