@@ -223,7 +223,7 @@
     #place(line(stroke: black.lighten(70%)+1pt, start: (0%, 0%), end: (100%, 100%)))
     #place(line(stroke: black.lighten(70%)+1pt, start: (0%, 100%), end: (100%, 0%)))
   ],
-  variant: [#h(-2.5em) НЕОБЯЗАТЕЛЬНОЕ\ это не нужно в билете, но оставлено здесь для понимания #place(top+right, dx: -1em, block(fill: black.lighten(50%), outset: .25em, radius: 25%, text(baseline: -2pt)[#h(2pt)#emoji.skull #emoji.warning #emoji.fire]))],
+  variant: [#h(-2.5em) НЕОБЯЗАТЕЛЬНОЕ\ это не нужно в билете, но оставлено здесь для понимания #place(top+right, dx: -1em, block(fill: black.lighten(50%), outset: .25em, radius: 25%, text(baseline: -2pt)[#h(2pt)#emoji.skull #emoji.warning #emoji.fire]))#v(-1em)],
   numbering: none,
   color: red,
   ..args
@@ -536,4 +536,20 @@
   numbering: none,
   ..args,
 )
-#let proof = proof.with(title: "Доказательство")
+#let qed() = {
+  h(1fr)
+  context {
+    set text(size: 1.4 * text.size)
+    "∎"
+    // box(fill: black, width: 0.8 * text.size, height: 0.8 * text.size, radius: 7%)
+  }
+}
+#let proof(
+  body
+) = context [
+  #[
+    #set text(style: "oblique", weight: "bold")
+    Доказательство:
+  ]
+  #body #qed()
+]
