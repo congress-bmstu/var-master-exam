@@ -21,7 +21,7 @@ jobs:
             - '**/*.typ'
           workflows:
             - '.github/workflows/**'
-  build:
+  build-and-release:
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DOC_NAME: "var"
@@ -96,6 +96,6 @@ jobs:
         with:
           name: ${{env.DATE}}-${{github.sha}}
           body: Build ${{env.DOC_NAME}}-${{env.DATE}}-${{github.sha}}.pdf
-          tag_name: pdf
+          tag_name: pdf-${{env.DOC_NAME}}-${{env.DATE}}-${{github.sha}}
           files: |
             ${{env.DOC_NAME}}.pdf
